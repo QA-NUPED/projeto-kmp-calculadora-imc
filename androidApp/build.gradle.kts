@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myfirstkmp.android"
+    namespace = "com.example.bmi.android"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.example.myfirstkmp.android"
+        applicationId = "com.example.bmi.android"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -42,5 +42,6 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+    implementation ("androidx.appcompat:appcompat:1.2.0")
     debugImplementation(libs.compose.ui.tooling)
 }
