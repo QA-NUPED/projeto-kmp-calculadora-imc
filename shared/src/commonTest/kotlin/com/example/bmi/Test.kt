@@ -2,6 +2,7 @@ package com.example.bmi
 
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertNotEquals
 
 class BMICalculatorTest {
 
@@ -18,12 +19,31 @@ class BMICalculatorTest {
     }
 
     @Test
+    fun testCalculateBMIFail() {
+        val weight = 70.0
+        val height = 1.50
+        val expectedBMI = 32.45
+
+        val actualBMI = bmiCalculator.calculateBMI(weight, height)
+        assertNotEquals(expectedBMI, actualBMI, 0.01)
+    }
+
+    @Test
     fun testUnderweightCategory() {
-        val bmi = 17.0
+        val bmi = 18.4
         val expectedCategory = "Underweight"
 
         val actualCategory = bmiCalculator.getBMICategory(bmi)
         assertEquals(expectedCategory, actualCategory)
+    }
+
+    @Test
+    fun testUnderweightCategoryFail() {
+        val bmi = 18.6
+        val expectedCategory = "Underweight"
+
+        val actualCategory = bmiCalculator.getBMICategory(bmi)
+        assertNotEquals(expectedCategory, actualCategory)
     }
 
     @Test
