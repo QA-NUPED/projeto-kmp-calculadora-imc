@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -12,7 +13,8 @@
         android:hint="@string/weight_hint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:contentDescription="@string/weight_input_description" />
 
     <EditText
         android:id="@+id/heightInput"
@@ -21,7 +23,8 @@
         android:hint="@string/height_hint"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:contentDescription="@string/height_input_description" />
 
     <Button
         android:id="@+id/calculateButton"
@@ -30,7 +33,8 @@
         android:text="@string/calculate_bmi_button"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp"
-        android:padding="16dp" />
+        android:padding="16dp"
+        android:contentDescription="@string/calculate_button_description" />
 
     <TextView
         android:id="@+id/resultText"
@@ -39,6 +43,7 @@
         android:text="@string/result_text"
         android:textAlignment="center"
         android:textSize="18sp"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/result_text_description" />
 
 </LinearLayout>

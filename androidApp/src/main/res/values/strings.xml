@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <string name="weight_hint">Enter your weight (kg)</string>
-    <string name="height_hint">Enter your height (m)</string>
-    <string name="calculate_bmi_button">Calculate BMI</string>
-    <string name="result_text">Result</string>
+<string name="weight_hint">Enter your weight</string>
+<string name="height_hint">Enter your height</string>
+<string name="calculate_bmi_button">Calculate BMI</string>
+<string name="result_text">Your BMI is:</string>
+
+<!-- Accessibility descriptions -->
+<string name="weight_input_description">Input field for your weight in kilograms</string>
+<string name="height_input_description">Input field for your height in meters</string>
+<string name="calculate_button_description">Button to calculate your BMI</string>
+<string name="result_text_description">Displays the calculated BMI result</string>
 </resources>
+
