@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "com.example.bmi.android"
+    namespace = "com.example.androidApp"
     compileSdk = 34
     defaultConfig {
-        applicationId = "com.example.bmi.android"
+        applicationId = "com.example.androidApp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -42,6 +42,8 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
-    implementation ("androidx.appcompat:appcompat:1.2.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")  // Atualize para a versão mais recente
+    implementation("androidx.core:core-ktx:1.10.0")
+    implementation("androidx.appcompat:appcompat:1.2.0")
     debugImplementation(libs.compose.ui.tooling)
 }

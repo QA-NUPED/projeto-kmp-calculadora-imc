@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.androidApp">
 
     <application
-        android:allowBackup="false"
+        android:allowBackup="true"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -14,4 +15,5 @@
             </intent-filter>
         </activity>
     </application>
-</manifest> 
+
+</manifest>
