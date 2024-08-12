@@ -2,6 +2,35 @@
 
 Projeto básico de uma calculadora de IMC para aprendizado do KMP e criação de testes unitários.
 
+## Arquitetura do Projeto
+```
+├── resources
+│   ├── Kotlin
+│   ├── AndroidApp
+│   │       └── src/main
+│   │           └── java/com/example/androidApp
+│   │           └── res
+│   ├── gradle
+│   ├── iosApp
+│   │   ├── iosApp.xcodeproj
+│   │   ├── project.xcworkspace
+│   ├── Shared
+│   │       └── src
+│   │           └── androidMain/kotlin/com/example/bmi
+│   │           └── androidUnitTest/kotlin/com/example/bmi
+│   │           └── commonMain/kotlin/com/example/bmi
+│   │           └── commonTest/kotlin/com/example/bmi
+│   │           └── iosMain/kotlin/com/example/bmi
+│   │           └── iosTest/kotlin/com/example/bmi
+├── .gitignore
+├── README.md
+├── build.gradle.kts
+├── gradle.properties
+├── gradlew
+├── gradlew.bat
+└── settings.gradle.kts
+```
+
 ## O que preciso fazer antes de rodar o projeto?
 
 Precisamos ter algumas ferramentas instaladas na máquina. Segue o vídeo abaixo para auxiliar na configuração.
