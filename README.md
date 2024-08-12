@@ -48,6 +48,7 @@ Tutorial: Kotlin Multiplataforma (KMP): Criando um App nativo para Android e iOS
 
 ## Testes unitários
 
+Insira um texto ou uma explicação sobre os testes do projeto.
 
 ## Resumo do projeto
 
