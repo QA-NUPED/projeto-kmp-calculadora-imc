@@ -48,7 +48,28 @@ Tutorial: Kotlin Multiplataforma (KMP): Criando um App nativo para Android e iOS
 
 ## Testes unitários
 
-Insira um texto ou uma explicação sobre os testes do projeto.
+Testes unitários são uma parte fundamental do desenvolvimento de software, pois garantem que pequenas partes do código (as unidades) funcionem corretamente de forma isolada. No contexto de um projeto usando Kotlin Multiplatform (KMP), a criação de testes unitários é especialmente importante, pois permite que você garanta a funcionalidade e a estabilidade do código que é compartilhado entre diferentes plataformas, como Android e iOS.
+
+Importância dos Testes Unitários em KMP
+Garantia de Qualidade: Testes unitários ajudam a identificar problemas no código antes que eles sejam integrados em um sistema maior. Isso é crucial em projetos multiplataforma, onde uma falha em um módulo compartilhado pode impactar várias plataformas.
+
+Facilidade de Manutenção: Com testes unitários bem escritos, você pode modificar o código com confiança. Se algo quebrar, os testes fornecerão feedback imediato, indicando onde está o problema.
+
+Reutilização de Código: No KMP, grande parte do código é compartilhada entre Android e iOS. Escrever testes unitários para esse código compartilhado garante que as mesmas funcionalidades se comportem da mesma maneira em ambas as plataformas.
+
+Evolução do Projeto: Testes unitários permitem refatorar o código existente ou adicionar novas funcionalidades sem medo de introduzir novos bugs.
+
+### Como Criar Testes Unitários em KMP
+
+Configuração do Ambiente:
+
+No arquivo build.gradle.kts, certifique-se de que as dependências de testes estejam configuradas corretamente para a parte comum (commonMain) e para as partes específicas de cada plataforma (androidMain e iosMain).
+Você pode usar frameworks de testes como Kotlin Test para escrever testes comuns que serão executados tanto no Android quanto no iOS.
+Escrita dos Testes:
+
+Crie uma pasta de testes no módulo comum, por exemplo, src/commonTest/kotlin.
+Dentro dessa pasta, crie classes de teste para as funcionalidades que deseja validar.
+Use as funções de asserção padrão, como assertEquals, assertTrue, etc., para verificar se os resultados são os esperados.
 
 ## Resumo do projeto
 
